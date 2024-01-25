@@ -24,7 +24,7 @@ jobs:
       - name: Build and test with Maven
         run: |
           cd simple-api
-          mvn -B verify sonar:sonar \
+          mvn -B verify sonar:sonar -e -X\
             -Dsonar.projectKey=Clarinka_devops-livecoding \
             -Dsonar.organization=clarinka \
             -Dsonar.host.url=https://sonarcloud.io \
